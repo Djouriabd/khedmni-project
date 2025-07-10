@@ -1,0 +1,39 @@
+.reviews-container{
+    place-items: center;
+    margin-bottom: 250px;
+}
+
+.reviews{
+    place-items: center;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+.user{
+    width: 361px;
+    height: 353px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #181C14;
+    box-shadow: 0px 4px 30px 0px rgba(43, 27, 18, 0.12);
+}
+
+h3{
+    padding: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.ic{
+    font-size: 50px;
+}
+
+.pov{
+    color: #ffffff;
+    place-items: left;
+}

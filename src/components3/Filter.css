@@ -1,0 +1,17 @@
+
+.job-container{
+    margin-top: 116px;
+    
+}
+
+.filter{
+    width: 351px;
+    height: 1303px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #3C3D37;
+    padding: 50px;}
+
+label{
+    color: #fff;
+}

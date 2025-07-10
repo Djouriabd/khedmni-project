@@ -1,0 +1,47 @@
+
+
+#ph2{
+    width: 680px;
+    height: 680px;
+}
+
+.h1{
+    color: #3C3D37;
+    text-align: center;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.about-us{
+    margin-top: 100px;
+    max-width: 35%;
+    margin-left: 150px;
+}
+
+#h2{
+    color: #3C3D37;
+    text-align: left;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+p{
+    text-align: left;
+    max-width: 60%;
+    color: #181C14;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
