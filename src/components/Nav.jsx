@@ -19,7 +19,7 @@ function Nav() {
                 </div>
                 <div className='buttons'>
                     <button className='btn1'>Sign Up</button>
-                    <button className='btn2'>Login</button> //lol
+                    <button className='btn2'>Login</button>
                 </div>
             </nav>
         </>
