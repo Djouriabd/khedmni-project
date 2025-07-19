@@ -9,7 +9,7 @@
 nav{
     position: fixed;
     width: 100%;
-    height: 75px;
+    height: 80px;
     background: #181C14;
     display: flex;
     flex-direction: row;
@@ -26,12 +26,12 @@ nav img{
 
 .link{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-style: normal;
 }
 
 .NavBtn{
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 400;
     margin: 50px;
     justify-content: space-between;
@@ -45,13 +45,12 @@ nav img{
     text-decoration: underline;
 }
 
-#clicked{
+.NavBtn.active {
     text-decoration: underline;
     color: #9CAD96;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .buttons{
@@ -61,7 +60,7 @@ nav img{
 .btn1{
     margin-right: 20px;
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -80,7 +79,7 @@ nav img{
 
 .btn2{
     color: #3C3D37;
-    font-size: 15px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

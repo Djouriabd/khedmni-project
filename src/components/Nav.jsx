@@ -1,29 +1,45 @@
 import './Nav.css'
 import { useState } from 'react'
 import logo from '../assets/khdemni.svg'
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    return(
-        <>
-            <nav className='nav'>
-                <div>
-                    <img src={logo} alt="khedmni logo" />
-                </div>
+    return (
+        <nav className='nav'>
+            <div>
+                <img src={logo} alt="khedmni logo" />
+            </div>
 
-                <div className='link'>
-                    <a className='NavBtn' href='#' id='clicked'>Home</a>
-                    <a className='NavBtn' href='#'>Find Job</a>
-                    <a className='NavBtn' href='#'>Services</a>
-                    <a className='NavBtn' href='#'>Contact</a>
-                </div>
-                <div className='buttons'>
-                    <button className='btn1'>Sign Up</button>
-                    <button className='btn2'>Login</button>
-                </div>
-            </nav>
-        </>
+            {/*<div className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
+                ☰
+            </div>*/}
+
+            <div className={`link ${menuOpen ? 'open' : ''}`}>
+                <NavLink 
+                    className={({ isActive }) => isActive ? 'NavBtn active' : 'NavBtn'} to="/" end onClick={() => setMenuOpen(false)}>Home
+                </NavLink>
+
+                <NavLink 
+                    className={({ isActive }) => isActive ? 'NavBtn active' : 'NavBtn'} to="/findjob" onClick={() => setMenuOpen(false)}>Find Job
+                </NavLink>
+
+                <NavLink 
+                    className={({ isActive }) => isActive ? 'NavBtn active' : 'NavBtn'} to="/services" onClick={() => setMenuOpen(false)}>Services
+                </NavLink>
+
+                <NavLink 
+                    className={({ isActive }) => isActive ? 'NavBtn active' : 'NavBtn'} to="/contactus" onClick={() => setMenuOpen(false)}>Contact
+                </NavLink>
+            </div>
+
+            <div className={`buttons ${menuOpen ? 'open' : ''}`}>
+                <button className='btn1'>Sign Up</button>
+                <button className='btn2'>Login</button>
+            </div>
+        </nav>
     )
 }
 
-export default Nav
+export default Nav;
