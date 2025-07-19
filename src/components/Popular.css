@@ -2,9 +2,17 @@
 .popular{
     place-items: center;
     margin-bottom: 150px;
+    padding: 0 20px;
 }
 
-p{
+.popular h1 {
+    text-align: center;
+    color: #3C3D37;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.popular p{
     margin-top: 20px;
     align-items: center;
     text-align: center;
@@ -19,6 +27,8 @@ p{
     display:flex;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .img{
@@ -39,9 +49,10 @@ p{
     box-shadow: 0px 4px 30px 0px rgba(43, 27, 18, 0.12);
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
 }
 
-a{
+.company a{
     margin-top: 20px;
     margin-left: 5px;
     text-decoration: none;
@@ -57,4 +68,114 @@ a{
     color: #ECDFCC;
     font-size: 15px;
     text-align: left;
+}
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .popular {
+        padding: 0 30px;
+        margin-bottom: 120px;
+    }
+    
+    .popular h1 {
+        font-size: 2.2rem;
+    }
+    
+    .popular p {
+        font-size: 17px;
+    }
+    
+    .popular-companies {
+        gap: 40px;
+    }
+    
+    .company {
+        width: 280px;
+        height: 380px;
+    }
+    
+    .img {
+        width: 240px;
+        height: 190px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .popular {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    
+    .popular h1 {
+        font-size: 2rem;
+    }
+    
+    .popular p {
+        font-size: 16px;
+    }
+    
+    .popular-companies {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .company {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 380px;
+    }
+    
+    .img {
+        width: 100%;
+        max-width: 280px;
+        height: 200px;
+        align-self: center;
+    }
+    
+    .company a {
+        font-size: 22px;
+    }
+    
+    .text {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .popular {
+        padding: 0 15px;
+        margin-bottom: 80px;
+    }
+    
+    .popular h1 {
+        font-size: 1.8rem;
+    }
+    
+    .popular p {
+        font-size: 15px;
+    }
+    
+    .company {
+        max-width: 300px;
+        padding: 15px;
+        min-height: 350px;
+    }
+    
+    .img {
+        max-width: 250px;
+        height: 180px;
+    }
+    
+    .company a {
+        font-size: 20px;
+    }
+    
+    .text {
+        font-size: 13px;
+    }
 }

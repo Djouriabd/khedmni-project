@@ -12,9 +12,9 @@ function Nav() {
                 <img src={logo} alt="khedmni logo" />
             </div>
 
-            {/*<div className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
+            <div className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
                 ☰
-            </div>*/}
+            </div>
 
             <div className={`link ${menuOpen ? 'open' : ''}`}>
                 <NavLink 
