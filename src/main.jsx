@@ -44,6 +44,7 @@ const FindJob = () => (
     <Nav />
     <Search />
     <Filter />
+    <Footer />
   </>
 )
 

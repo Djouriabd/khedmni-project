@@ -28,16 +28,24 @@ function Footer(){
         <p className='footer-p'>Newsletter</p>
     </div>
 
-    <div class="footer-column">
+    <div className="footer-column">
         <h3>Our Social</h3>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        </div>
+            <div className="social-links">
+                <a href="#" aria-label="Instagram">
+                    <i className="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i className="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i className="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
     </div>
-</div>
-        <p>Bringing you closer to career opportunities. Start today.</p>
+    </div>
+        <div className="footer-bottom">
+            <p>Bringing you closer to career opportunities. Start today.</p>
+        </div>
         </div>
     )
 }
