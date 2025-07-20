@@ -1,8 +1,20 @@
 
 .signup{
+    top: 0;
+    margin: 0;
+    padding: 20px;
     left: 0;
-    place-items: center;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+img{
+    width: auto;
+    height: 130px;
+    margin-bottom: 20px;
 }
 
 #hh{
@@ -12,25 +24,173 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    white-space: nowrap;
-    margin-top: 31px;
-    margin-bottom: 36px;
+    margin: 0 0 40px 0;
 }
 
 .sign-form{
-    place-items: center;
+    padding: 30px 25px;
     display: flex;
     flex-direction: column;
-    width: 392px;
-    height: 583px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 392px;
+    min-height: 583px;
     border-radius: 25px;
     border: 2px solid rgba(57, 62, 70, 0.50);
     background: rgba(156, 173, 150, 0.25);
+    box-sizing: border-box;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .name{
     display: flex;
     flex-direction: column;
     flex: 1; 
+}
+
+.name label,
+.form-group label {
+    text-align: left;
+    color: #3C3D37;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.name input,
+.form-group input {
+    width: 100%;
+    height: 46px;
+    border-radius: 10px;
+    border: 2px solid rgba(60, 61, 55, 0.50);
+    background: #FFF;
+    padding: 0 18px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.name input:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #3C3D37;
+}
+
+.submit{
+    color: #E0E1DD;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    background: #3C3D37;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background: #2a2b26;
+}
+
+.sign{
+    color: #3C3D37;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.sign a{
+    color: rgba(43, 27, 18, 0.50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.sign a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .signup {
+        padding: 15px;
+    }
+    
+    .sign-form {
+        padding: 25px 20px;
+        max-width: 100%;
+        min-height: auto;
+    }
+    
+    #hh {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    img {
+        height: 100px;
+    }
+    
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .name {
+        margin-bottom: 20px;
+    }
+    
+    .name label,
+    .form-group label {
+        font-size: 14px;
+    }
+    
+    .name input,
+    .form-group input {
+        height: 44px;
+        font-size: 14px;
+    }
+    
+    .submit {
+        font-size: 18px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sign-form {
+        padding: 20px 15px;
+    }
+    
+    #hh {
+        font-size: 32px;
+    }
+    
+    img {
+        height: 80px;
+    }
 }
