@@ -1,9 +1,10 @@
 import './Filter.css'
+import Jobs from './Jobs'
 
 function Filter(){
 
     return(
-        <div class="job-container">
+        <div class="filter-container">
             <div class="filter">
                 <h2>Filter by:</h2>
                 <label className='one'>Salary Range:
@@ -74,6 +75,7 @@ function Filter(){
                     </label>
                 </label>
             </div>
+        <Jobs />
         </div>        
     )
 }
