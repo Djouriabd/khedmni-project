@@ -1,0 +1,121 @@
+
+.job-container{
+    padding-top: 50px ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    max-width: 40%;
+    align-items: right;
+    justify-content: end;
+    place-items: right;
+}
+
+.header-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-search h2{
+    color: #3C3D37;
+}
+
+.sort-by{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    padding: 16px;
+    color: #3C3D37;
+    border: none;
+    border-radius: 10px;
+}
+
+.job-card{
+    padding: 25px;
+    max-width: 100%;
+    min-width: 950px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(156, 173, 150, 0.50);
+    margin-bottom: 50px;
+}
+
+.job-card:hover{
+    background: rgba(156, 173, 150, 0.75);
+    box-shadow: 0px 2px 30px 0px hsl(101, 16%, 70%);
+}
+
+.job-header h3 {
+    color: #3C3D37;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.jobs-p{
+    font-size: 15px;
+    align-items: left;
+    justify-content: left;
+    place-items: left;
+}
+
+/*.job-header span.full-time {
+    color: rgb(117, 117, 244);
+    font-size: 400;
+    background-color: #3C3D37;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}*/
+
+.job-header span.part-time {
+    color: white;
+    background-color: #3C3D37;
+    border: #3C3D37 solid 0.1px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: medium;    
+}
+
+.job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.btn-outline{
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid #3C3D37;
+    color: #3C3D37;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline:hover {
+    background: #181C14;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #3C3D37;
+    color: #fff;
+    padding: 10px 20px;
+    border: transparent;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: #3C3D37;
+}
