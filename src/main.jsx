@@ -22,9 +22,12 @@ import Signup from './components2/Signup.jsx'
 //find job components
 import Search from './components3/Search.jsx'
 import Filter from './components3/Filter.jsx'
+import Jobs from './components3/Jobs.jsx'
 
 //about us components
 import Contact from './components4/Contact.jsx'
+
+import Error from './components/Error.jsx'
 
 const Home = () => (
   <>
@@ -56,6 +59,13 @@ const ContactUs = () => (
   </>
 )
 
+const NotAvailablePage = () =>(
+  <>
+  <Nav />
+    <Error />
+  </>
+)
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -76,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: "/contactus",
     element: <ContactUs />
+  },
+  {
+    path: "/*",
+    element: <NotAvailablePage />
   }
 ])
 

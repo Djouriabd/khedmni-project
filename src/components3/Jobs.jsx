@@ -12,11 +12,12 @@ function Jobs (){
     const showJobs = async ()=>{
         try {
             setLoading(true)
-            const availableJobs = await axios.get('http://localhost:5000/findjobs',data)
-            console.log(availableJobs.data)
-            setData(availableJobs.data)
+            const response = await axios.get('http://localhost:5000/jobs',data)
+            console.log(response.data)
+            setData(response.data.jobs)
         } catch (error) {
-            setError(error.response?.data?.message || 'Something went wrong')
+            console.error("Error fetching jobs:", error)
+            setError('Something went wrong')
         }finally {
             setLoading(false)
         }
@@ -43,7 +44,7 @@ function Jobs (){
                     <option>Latest</option>
                 </select>
             </div>
-            {data.map((job) => (
+            {data.slice(0, 5).map((job) => (
                     <div key={job._id} className="job-card">
                         <div className="job-header">
                             <h3>
