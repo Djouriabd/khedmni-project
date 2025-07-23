@@ -2,6 +2,8 @@ import ph1 from '../assets/ph1.svg'
 import './Header.css'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import { useEffect } from 'react'
+import axios from 'axios'
 
 function Header(){
 
@@ -11,11 +13,20 @@ function Header(){
         navigate('/signup'); // or your specific sign-up route
     }
 
+    const fetchData = async () =>{
+        const data = await axios.get("http://localhost:5000/test",{
+            headers:{
+                "Authorization" : `Bearer ${JSON.parse(localStorage.getItem("token"))}`
+            }
+        })
+    }
+
+    useEffect( ()=>{
+        fetchData()
+    },[])
+
     return(
         <div className='header-container'>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            </Helmet>
             <div className='header'>
                 <h1>FIND YOUR <br /> DREAM <br /> JOB</h1>
                 <p>Welcome to khedmni here where you <br /> can find your dream job in easiest <br /> way ever!</p>
