@@ -20,7 +20,8 @@ nav{
     z-index: 1000;
 }
 
-nav img{
+#logo-ph{
+    margin-top: 22px;
     width: 232px;
     height: 139px;
     object-fit: contain;
@@ -126,7 +127,7 @@ nav img{
 
 /* Large Desktop */
 @media screen and (max-width: 1200px) {
-    nav img {
+    #logo-ph{
         width: 200px;
         height: 120px;
     }
@@ -153,7 +154,7 @@ nav img{
         padding: 0 15px;
     }
     
-    nav img {
+    #logo-ph{
         width: 180px;
         height: 108px;
     }
@@ -181,7 +182,7 @@ nav img{
         position: relative;
     }
     
-    nav img {
+    #logo-ph{
         width: 150px;
         height: 90px;
     }

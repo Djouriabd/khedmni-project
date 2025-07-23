@@ -2,14 +2,27 @@ import './Nav.css'
 import { useState } from 'react'
 import logo from '../assets/khdemni.svg'
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const navigateLogin = useNavigate();
+
+    const navigateSignUp = useNavigate();
+
+    const handleClick = () => {
+        navigateLogin('/login'); // or your specific sign-up route
+    }
+
+    const secondHandleClick = () =>{
+        navigateSignUp('/signup')
+    }
+
     return (
         <nav className='nav'>
             <div>
-                <img src={logo} alt="khedmni logo" />
+                <img id='logo-ph' src={logo} alt="khedmni logo" />
             </div>
 
             <div className='menu-toggle' onClick={() => setMenuOpen(!menuOpen)}>
@@ -35,8 +48,8 @@ function Nav() {
             </div>
 
             <div className={`buttons ${menuOpen ? 'open' : ''}`}>
-                <button className='btn1'>Sign Up</button>
-                <button className='btn2'>Login</button>
+                <button className='btn1' onClick={secondHandleClick}>Sign Up</button>
+                <button className='btn2' onClick={handleClick}>Login</button>
             </div>
         </nav>
     )
